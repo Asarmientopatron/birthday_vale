@@ -31,7 +31,7 @@ export const Riddle = () => {
         </Box>
         <Box>
           Sofía, una chica que llevaba esperando muchos meses la llegada de la feria, decide ir y disfrutar de todas las atracciones
-          de los cuatro salones. Para ello, realiza la siguiente recorrido:
+          de los cuatro salones. Para ello, realiza el siguiente recorrido:
         </Box>
         <Box>
           Entra al primer salón (debe pagar $1000 para entrar);

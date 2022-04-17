@@ -160,7 +160,7 @@ export const Last = () => {
                       navigate('/');
                     })}
                   />
-                  Presentación   
+                  Home   
                 </Box>
               </Tooltip>
               <Tooltip title='Formulario'>
@@ -183,7 +183,7 @@ export const Last = () => {
                       navigate('/form');
                     })}
                   />
-                  Formulario
+                  Form
                 </Box>
               </Tooltip>
               <Tooltip title='Reproductor'>
@@ -206,7 +206,7 @@ export const Last = () => {
                       navigate('/main');
                     })}
                   />
-                  Reproductor
+                  Player
                 </Box>
               </Tooltip>
               <Tooltip title='Código de la App'>
@@ -229,7 +229,7 @@ export const Last = () => {
                       window.open('https://github.com/Asarmientopatron/birthday_vale');
                     })}
                   />
-                  Código App
+                  App Code
                 </Box>
               </Tooltip>
             </Box>
