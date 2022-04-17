@@ -1,10 +1,11 @@
-import { Box, Button, Paper, TextField, Typography, MenuItem } from '@mui/material'
+import { Box, Button, Paper, TextField, Typography, MenuItem, Tooltip } from '@mui/material'
 import { Formik, Form as Formulario, useField } from 'formik'
 import React from 'react'
 import * as yup from 'yup'
 import moment from 'moment'
 import { useNavigate } from 'react-router-dom'
 import hbg from './../assets/images/Imagen1.png'
+import { EmojiObjects } from '@mui/icons-material'
 
 const MyTextField = (props) => {
   const [field, meta] = useField(props);
@@ -60,7 +61,7 @@ const validationSchema = yup.object({
   respuesta: yup
     .string()
     .required('Definitivamente esto es una broma 🙄')
-    .oneOf(['19940429'], 'Ups! No, no da eso 🤯'),
+    .oneOf(['45000'], 'Ups! Nope, esa no es la respuesta 🤯'),
   fecha_nacimiento: yup
     .date()
     .required(
@@ -156,16 +157,35 @@ export const Form = () => {
                   options={options}
                   variant='standard'
                 />
-                <MyTextField
+                <Box
                   sx={{
-                    width: 220
+                    display: 'flex',
+                    justifyContent: '',
+                    alignItems: 'center'
                   }}
-                  required
-                  label='Respuesta a la ecuación:'
-                  name='respuesta'
-                  variant='standard'
-                />
-                {/* <EmojiPicker onEmojiClick={(e, emojiObject) => {console.log(emojiObject)}}/> */}
+                >
+                  <MyTextField
+                    sx={{
+                      width: 195
+                    }}
+                    required
+                    label='Respuesta al acertijo:'
+                    name='respuesta'
+                    variant='standard'
+                  />
+                  <Tooltip title='Acertijo'>
+                    <EmojiObjects
+                      sx={{
+                        fontSize: 35,
+                        color: '#611C35',
+                        cursor: 'pointer'
+                      }}
+                      onClick={() => {
+                        window.open('/riddle')
+                      }}
+                    />
+                  </Tooltip>
+                </Box>
                 <Button type='submit' variant='outlined'>Verificar si soy digna</Button>
               </Box>
             </Formulario>

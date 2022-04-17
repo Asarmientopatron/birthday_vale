@@ -22,15 +22,16 @@ export const Introducing = () => {
           borderRadius: 5,
           width: 300,
           maxHeight: '100%',
-          fontSize: 19,
-          fontStyle: 'italic',
+          fontSize: 25,
+          fontWeight: 'bold',
+          fontFamily: 'Updock, cursive',
           backgroundImage: `url(${hbg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'top'
         }}
       >
         <p style={{fontSize: 34}}>
-          Holaaaa <span style={{fontWeight: 'bold'}}>Vale!</span> 
+          Holaaaa <span style={{fontWeight: 'bold', fontSize: 38}}>Vale!</span> 
         </p>
         <p style={{
           fontStyle: 'italic',
@@ -50,13 +51,13 @@ export const Introducing = () => {
           por las clases de baile, por presentarme con tus amigos, 
           en fin, por muchas cosas <span role={'img'} aria-label='heart'>❤️</span>
         </p>
-        <p style={{fontSize: 22, fontStyle: 'italic'}}> 
+        <p style={{fontSize: 30, fontStyle: 'italic'}}> 
           Hope you like and enjoy it
         </p>
-        <p style={{textAlign: 'right', marginBottom: 0}}>
+        <p style={{fontSize: 30, textAlign: 'right', marginBottom: 0}}>
           Atte,
         </p>
-        <p style={{textAlign: 'right', marginTop: 0}}>
+        <p style={{fontSize: 30, textAlign: 'right', marginTop: 0}}>
           Andrés
         </p>
         <div style={{

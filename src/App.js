@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Form } from './components/Form';
 import { Introducing } from './components/Introducing';
 import { Last } from './components/Last';
+import { Riddle } from './components/Riddle';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/form' element={<Form/>}/>
         <Route path='/main' element={<Main/>}/>
         <Route path='/last' element={<Last/>}/>
+        <Route path='/riddle' element={<Riddle/>}/>
       </Routes>
     </div>
   )
