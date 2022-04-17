@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Paper, Tooltip } from '@mui/material'
-import { Home, FormatAlignJustify, Lyrics} from '@mui/icons-material'
+import { Home, FormatAlignJustify, Lyrics, Code} from '@mui/icons-material'
 import hbg from './../assets/images/Imagen1.png'
 import { useNavigate } from 'react-router-dom'
 import devil from './../assets/images/devil.png'
@@ -173,6 +173,18 @@ export const Last = () => {
                   }}
                   onClick={(() => {
                     navigate('/main');
+                  })}
+                />  
+              </Tooltip>
+              <Tooltip title='Código de la App'>
+                <Code 
+                  sx={{
+                    fontSize: '40px', 
+                    cursor: 'pointer', 
+                    color: 'black'
+                  }}
+                  onClick={(() => {
+                    window.open('https://github.com/Asarmientopatron/birthday_vale');
                   })}
                 />  
               </Tooltip>
