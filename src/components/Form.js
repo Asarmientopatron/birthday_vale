@@ -174,16 +174,27 @@ export const Form = () => {
                     variant='standard'
                   />
                   <Tooltip title='Acertijo'>
-                    <EmojiObjects
+                    <Box 
                       sx={{
-                        fontSize: 35,
-                        color: '#611C35',
-                        cursor: 'pointer'
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        fontSize: 11
                       }}
-                      onClick={() => {
-                        window.open('/riddle')
-                      }}
-                    />
+                    >
+                      <EmojiObjects
+                        sx={{
+                          fontSize: 35,
+                          color: '#611C35',
+                          cursor: 'pointer'
+                        }}
+                        onClick={() => {
+                          window.open('/riddle')
+                        }}
+                      />
+                      Acertijo
+                    </Box>
                   </Tooltip>
                 </Box>
                 <Button type='submit' variant='outlined'>Verificar si soy digna</Button>

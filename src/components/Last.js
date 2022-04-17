@@ -141,52 +141,96 @@ export const Last = () => {
               }}
             >
               <Tooltip title='Presentación'>
-                <Home 
+                <Box 
                   sx={{
-                    fontSize: '40px', 
-                    cursor: 'pointer', 
-                    color: '#073105'
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    fontSize: 13
                   }}
-                  onClick={(() => {
-                    navigate('/');
-                  })}
-                />
+                >
+                  <Home 
+                    sx={{
+                      fontSize: '40px', 
+                      cursor: 'pointer', 
+                      color: '#073105'
+                    }}
+                    onClick={(() => {
+                      navigate('/');
+                    })}
+                  />
+                  Presentación   
+                </Box>
               </Tooltip>
               <Tooltip title='Formulario'>
-                <FormatAlignJustify 
+                <Box 
                   sx={{
-                    fontSize: '40px', 
-                    cursor: 'pointer', 
-                    color: '#BEB7A4'
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    fontSize: 13
                   }}
-                  onClick={(() => {
-                    navigate('/form');
-                  })}
-                />
+                >
+                  <FormatAlignJustify 
+                    sx={{
+                      fontSize: '40px', 
+                      cursor: 'pointer', 
+                      color: '#BEB7A4'
+                    }}
+                    onClick={(() => {
+                      navigate('/form');
+                    })}
+                  />
+                  Formulario
+                </Box>
               </Tooltip>
               <Tooltip title='Reproductor'>
-                <Lyrics 
+                <Box 
                   sx={{
-                    fontSize: '40px', 
-                    cursor: 'pointer', 
-                    color: 'pink'
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    fontSize: 13
                   }}
-                  onClick={(() => {
-                    navigate('/main');
-                  })}
-                />  
+                >
+                  <Lyrics 
+                    sx={{
+                      fontSize: '40px', 
+                      cursor: 'pointer', 
+                      color: 'pink'
+                    }}
+                    onClick={(() => {
+                      navigate('/main');
+                    })}
+                  />
+                  Reproductor
+                </Box>
               </Tooltip>
               <Tooltip title='Código de la App'>
-                <Code 
+                <Box 
                   sx={{
-                    fontSize: '40px', 
-                    cursor: 'pointer', 
-                    color: 'black'
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    fontSize: 13
                   }}
-                  onClick={(() => {
-                    window.open('https://github.com/Asarmientopatron/birthday_vale');
-                  })}
-                />  
+                >
+                  <Code 
+                    sx={{
+                      fontSize: '40px', 
+                      cursor: 'pointer', 
+                      color: 'black'
+                    }}
+                    onClick={(() => {
+                      window.open('https://github.com/Asarmientopatron/birthday_vale');
+                    })}
+                  />
+                  Código App
+                </Box>
               </Tooltip>
             </Box>
           </Box>
