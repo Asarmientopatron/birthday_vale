@@ -9,7 +9,7 @@ import heart from './../assets/images/heart.png'
 import boom from './../assets/images/boom.jpg'
 
 export const Last = () => {
-  const [number, setNumber] = useState(15);
+  const [number, setNumber] = useState(1);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -133,6 +133,65 @@ export const Last = () => {
             <Box>
               Naaaah, era broma. Puedes visitarlo las veces  que quieras. Ojalá te haya gustado al menos un poco de lo que me gustó a mí hacerlo!
               <img src={heart} alt='heart' style={{height: 20}}/>
+            </Box>
+            <Box
+              sx={{
+                borderWidth: 3,
+                borderStyle: 'solid',
+                marginTop: 1,
+                marginBottom: 1,
+                padding: 2
+              }}
+            >
+              <Box
+                sx={{
+                  borderStyle: 'dashed',
+                  borderWidth: 2,
+                  padding: '5px 2px'
+                }}             
+              >
+                 <Box
+                  sx={{
+                    fontSize: 10,
+                    fontWeight: 'normal',
+                    marginBottom: '5px'
+                  }}
+                >
+                  Toma una captura de pantalla o recorte de este ticket y preséntalo ante la entidad correspondiente para reclamarlo
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: 20,
+                    marginBottom: '5px'
+                  }}
+                >
+                  Ticket válido para una comida donde prefieras
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: 10,
+                    fontWeight: 'normal',
+                    textAlign: 'left',
+                    padding: '5px'
+                  }}
+                >
+                  <Box sx={{textAlign: 'center'}}>
+                    Términos y Condiciones:
+                  </Box>
+                  <Box>
+                  - No necesariamente debe ser una comida, es negociable
+                  </Box>
+                  <Box>
+                  - No incluye costos y/o gastos de transporte
+                  </Box>
+                  <Box>
+                  - De ser una comida, debe ser reclamada en un restaurante en la ciudad de Medellín o su área metropolitana
+                  </Box>
+                  <Box>
+                  - Otras consideraciones son negociables y no son incluidas en este documento por cuestiones de espacio :D
+                  </Box>
+                </Box>
+              </Box>
             </Box>
             <Box
               sx={{
