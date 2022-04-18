@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Box, Button, Paper, MenuItem, TextField, LinearProgress } from '@mui/material';
 import { Form, Formik, useField } from 'formik'
-import Ssong from './../assets/audio/cancion.mp3'
-import Esong from './../assets/audio/cancion2.mp3'
-import Fsong from './../assets/audio/cancion3.mp3'
+import Ssong from './../assets/audio/spanish.mp3'
+import Esong from './../assets/audio/english.mp3'
+import Fsong from './../assets/audio/french.mp3'
 import SFlag from './../assets/images/flag-span.png'
 import EFlag from './../assets/images/flag-usa.png'
 import FFlag from './../assets/images/flag-french.png'
-import hbg from './../assets/images/Imagen1.png'
+import hbg from './../assets/images/Image1.png'
 import { useNavigate } from 'react-router-dom';
 
 const MySelect = (props) => {

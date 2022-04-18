@@ -2,7 +2,7 @@ import { Box, Paper } from '@mui/material'
 import React from 'react'
 import { ArrowCircleRight } from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
-import hbg from './../assets/images/Imagen2.png'
+import hbg from './../assets/images/Image2.png'
 
 export const Introducing = () => {
   const navigate = useNavigate();

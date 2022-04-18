@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Paper, Tooltip } from '@mui/material'
 import { Home, FormatAlignJustify, Lyrics, Code} from '@mui/icons-material'
-import hbg from './../assets/images/Imagen1.png'
+import hbg from './../assets/images/Image1.png'
 import { useNavigate } from 'react-router-dom'
 import devil from './../assets/images/devil.png'
 import tongue from './../assets/images/tongue.png'

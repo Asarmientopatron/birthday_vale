@@ -4,7 +4,7 @@ import React from 'react'
 import * as yup from 'yup'
 import moment from 'moment'
 import { useNavigate } from 'react-router-dom'
-import hbg from './../assets/images/Imagen1.png'
+import hbg from './../assets/images/Image1.png'
 import { EmojiObjects } from '@mui/icons-material'
 
 const MyTextField = (props) => {
