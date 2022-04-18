@@ -9,7 +9,7 @@ import heart from './../assets/images/heart.png'
 import boom from './../assets/images/boom.jpg'
 
 export const Last = () => {
-  const [number, setNumber] = useState(1);
+  const [number, setNumber] = useState(15);
   const navigate = useNavigate();
 
   useEffect(() => {
