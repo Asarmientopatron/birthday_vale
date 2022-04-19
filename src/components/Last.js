@@ -79,7 +79,7 @@ export const Last = () => {
               <img style={{width: 40}} src={devil} alt='devil'/>
             </Box>
             <Box>
-              Si no dices en voz alta "No me gusta el jamón" en los próximos 15 segundos,
+              Si no dices en voz alta "Me encanta la Kizomba" en los próximos 15 segundos,
               no podrás volver a visitar este sitio nunca más y tu equipo quedará infectado con un virus de por vida
             </Box>
             <Box 
